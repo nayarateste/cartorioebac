@@ -122,10 +122,21 @@ int main()
 {
 	int opcao=0; //Definindo variaveis
 	int x=1;
+	char senhadigitada[10]="a";
+	int comparacao;
 	
+	printf("Cartório da EBAC\n\n");
+	printf("Login de administrador\n\nDigite sua senha: ");
+	scanf("%s",senhadigitada);
+	
+	comparacao = strcmp(senhadigitada, "admin");
+	
+	if(comparacao == 0)
+	{
+
+    system ("cls");
 	for(x=1;x=1;)
 	{	
-	
 	
 	    system("cls"); //responsável por limpar a tela
 			
@@ -165,8 +176,11 @@ int main()
     		break;
     			//fim da seleção do menu
 		}	
+		
+		}
 	
     }
 	
-	
+	else
+	printf("SENHA INCORRETA");
 }
